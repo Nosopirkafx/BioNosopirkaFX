@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200">
+    <title>Bio NosopirkaFX</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <h1>Bio NosopirkaFX</h1>
+    </header>
+
+    <!-- Навигация -->
+<nav class="tabs">
+    <a class="tab-btn" href="index.html">Обо мне</a>
+    <a class="tab-btn" href="design.html">Дизайн</a>
+    <a class="tab-btn" href="contacts.html">Контакты</a>
+    <a class="tab-btn" href="extras.html">Доп. Инф.</a>
+</nav>
+
+
+    <!-- Основной контент -->
+    <div class="content-wrapper">
+        <div class="profile-card">
+            <img src="files/avatar.png" alt="Аватарка" class="avatar">
+            <div class="profile-text">
+                <h2>Привет, я NosopirkaFX!</h2>
+                
+                <div class="paragraph">
+                    <p>Занимаюсь дизайном: делаю превью, баннеры, аватарки и всё в таком духе. В свободное время играю — люблю Hollow Knight, Geometry Dash, Roblox, The Forest, Bloons TD 6 и Portal 2.</p>
+                </div>
+                
+                <div class="paragraph">
+                    <p>Ещё немного разбираюсь в программировании: пишу на Python и верстаю на HTML + CSS. Часто сижу в Discord и Telegram, иногда активничаю.</p>
+                </div>
+                
+                <div class="paragraph">
+                    <p>Вот, в общем-то, и всё. :)</p>
+                </div>
+            </div>
+        </div>
+
+        <table class="info-table">
+            <tr>
+                <td>Имя:</td>
+                <td class="secret-value" onclick="revealSecret(this, event)">
+                    <span class="hidden">???</span>
+                    <span class="dots">•••••</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Возраст:</td>
+                <td class="secret-value" onclick="revealSecret(this, event)">
+                    <span class="hidden">???</span>
+                    <span class="dots">•••••</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Страна:</td>
+                <td class="secret-value" onclick="revealSecret(this, event)">
+                    <span class="hidden">Россия</span>
+                    <span class="dots">•••••••••</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Тг канал:</td>
+                <td class="secret-value" onclick="revealSecret(this, event)">
+                    <span class="hidden link" onclick="goToTelegram('https://t.me/nosopirka_fx', event)"></i> Перейти</span>
+                    <span class="dots">•••••••</span>
+                </td>
+            <tr>  
+                <td>Тг канал по дизайну:</td>
+                <td class="secret-value" onclick="revealSecret(this, event)">
+                    <span class="hidden link" onclick="goToTelegram('https://t.me/NosoDesing', event)"></i> Перейти</span>
+                    <span class="dots">•••••••</span>
+                </td>
+            <tr>
+                <td>Юзернейм</td>
+                <td class="secret-value" onclick="revealSecret(this, event)">
+                    <span class="hidden">@Nosoopirkafx</span>
+                    <span class="dots">•••••••••</span>
+                </td>
+            <tr>
+                <td>Дискорд сервер</td>
+                <td class="secret-value" onclick="revealSecret(this, event)">
+                    <span class="hidden link" onclick="goToTelegram('https://discord.gg/sSBhgs6vN3', event)"></i> Перейти</span>
+                    <span class="dots">•••••••</span>
+                </td>
+            <tr>
+                <td>Сфера</td>
+                <td class="secret-value" onclick="revealSecret(this, event)">
+                    <span class="hidden">Дизайн</span>
+                    <span class="dots">•••••••••</span>
+                </td>
+            </tr>
+            
+        </table>
+    </div>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="social-icons">
+    <a href="https://t.me/NosopirkaFX" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+    <a href="https://discordapp.com/users/1227137104140701728" target="_blank"><i class="fab fa-discord"></i></a>
+    <a href="https://www.youtube.com/@nosopirkafx" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://github.com/NosopirkaFX" target="_blank"><i class="fab fa-github"></i></a>
+</div>
+
+        <p>© 2025 NosopirkaFX bio. Все права защищены.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

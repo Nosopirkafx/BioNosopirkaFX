@@ -1063,4 +1063,55 @@ body {
 .card p {
     margin: 5px 0;
     color: #e0d6ff;
+
+}
+
+/* Исправление для иконок в футере на мобильных */
+@media (max-width: 768px) {
+  .social-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .social-icons a {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+    margin: 0 5px;
+  }
+}
+
+/* Для мобильных */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 0 15px;
+    gap: 15px;
+  }
+  
+  .card {
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .card img {
+    max-height: 200px;
+  }
+}
+
+/* Для планшетов */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px;
+  }
+}
+
+/* Для десктопов */
+@media (min-width: 1025px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 40px;
+  }
 }
